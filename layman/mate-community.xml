@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE repositories SYSTEM "/dtd/repositories.dtd">
+<repositories xmlns="" version="1.0">
+<repo quality="experimental" status="official">
+<name>mate-community</name>
+<description>Ebuild from the community for the MATE desktop</description>
+<homepage>https://github.com/infirit/mate-community/</homepage>
+<owner type="project">
+	<email>infirit@gmail.com</email>
+	<name>Infirit</name>
+</owner>
+<source type="git">git://github.com/infirit/mate-community.git</source>
+<feed>https://github.com/infirit/mate-community/commits/master.atom</feed>
+</repo>
+</repositories>
