@@ -7,7 +7,7 @@ GCONF_DEBUG="no"
 
 inherit mate
 
-DESCRIPTION="A set of MATE themes, with sets for users with limited or low vision"
+DESCRIPTION="The mate-themes-extras package contains a collection of GTK2/3 desktop themes for MATE."
 HOMEPAGE="https://github.com/NiceandGently/mate-themes-extras-2"
 SRC_URI="https://github.com/NiceandGently/mate-themes-extras-2/archive/v${PV}.tar.gz -> mate-themes-extras2-${PV}.tar.gz"
 LICENSE="LGPL-2.1"
