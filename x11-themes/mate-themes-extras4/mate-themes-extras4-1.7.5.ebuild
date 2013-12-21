@@ -7,9 +7,9 @@ GCONF_DEBUG="no"
 
 inherit mate
 
-DESCRIPTION="The mate-themes-extras package contains a collection of GTK2/3 desktop themes for MATE."
-HOMEPAGE="https://github.com/NiceandGently/mate-themes-extras-3"
-SRC_URI="https://github.com/NiceandGently/mate-themes-extras-3/archive/v${PV}.tar.gz -> mate-themes-extras3-${PV}.tar.gz"
+DESCRIPTION="The mate-themes-extras package contains a collection of GTK2/3 desktop themes for MATE"
+HOMEPAGE="https://github.com/NiceandGently/mate-themes-extras-4"
+SRC_URI="https://github.com/NiceandGently/mate-themes-extras-4/archive/v${PV}.tar.gz -> mate-themes-extras4-${PV}.tar.gz"
 LICENSE="LGPL-2.1"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~x86"
@@ -17,10 +17,8 @@ IUSE=""
 
 RDEPEND=">=x11-libs/gtk+-2:2
 	!!=x11-libs/gtk+-3.4
-	!!=x11-libs/gtk+-3.8
-	>=x11-themes/gtk-engines-2.15.3:2
-	x11-themes/gtk-engines-xfce:0
-	x11-themes/murrine-themes"
+	!!=x11-libs/gtk+-3.6
+	>=x11-themes/gtk-engines-2.15.3:2"
 
 DEPEND="${RDEPEND}
 	>=app-text/mate-doc-utils-1.2.1
@@ -31,31 +29,27 @@ DEPEND="${RDEPEND}
 
 RESTRICT="binchecks strip"
 
-S="${WORKDIR}/mate-themes-extras-3-${PV}"
+S="${WORKDIR}/mate-themes-extras-4-${PV}"
 
 src_configure() {
 	DOCS="AUTHORS ChangeLog NEWS README"
 
 	mate_src_configure \
-		--enable-Ambiance-blue \
-		--enable-Ambiance-lime \
 		--enable-Blue-Submarine \
 		--enable-clearlooks-phenix \
 		--enable-Cologne \
 		--enable-DeLorean-Dark \
-		--enable-Gnome-Cupertino \
-		--enable-Gnome-Cupertino-Mint \
 		--enable-Faience \
 		--enable-Faience-Ocre \
+		--enable-Gnome-Cupertino \
+		--enable-Gnome-Cupertino-Mint \
 		--enable-GnomishBeige \
 		--enable-Green-Submarine \
-		--enable-RadianceBlue \
-		--enable-Radiance-Xfce-LXDE-MATE \
 		--enable-Smoothly \
 		--enable-Smoothly-Black \
 		--enable-Zukitwo \
-		--enable-Zukitwo-Dust \
 		--enable-Zukitwo-Brave \
+		--enable-Zukitwo-Dust \
 		--enable-Zukitwo-Human \
 		--enable-Zukitwo-Illustrious \
 		--enable-Zukitwo-Noble \
