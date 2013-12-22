@@ -15,12 +15,18 @@ SLOT="0"
 KEYWORDS="~amd64 ~arm ~x86"
 IUSE=""
 
+# TODO: ebuilds faience-icon-theme elementary-icon-theme gtk-smooth-engine
 RDEPEND=">=x11-libs/gtk+-2:2
 	!!=x11-libs/gtk+-3.4
 	!!=x11-libs/gtk+-3.8
 	>=x11-themes/gtk-engines-2.15.3:2
 	x11-themes/gtk-engines-xfce:0
-	x11-themes/murrine-themes"
+	x11-themes/murrine-themes
+	x11-themes/vanilla-dmz-xcursors
+	x11-themes/gtk-engines-unico
+	x11-themes/gnome-colors-themes
+	x11-themes/gnome-icon-theme
+	x11-themes/mate-icon-theme"
 
 DEPEND="${RDEPEND}
 	>=app-text/mate-doc-utils-1.2.1
