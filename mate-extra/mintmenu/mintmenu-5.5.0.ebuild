@@ -6,11 +6,9 @@ EAPI=5
 
 PLOCALES=" \
 	af am ar ast be ber bg bn bs ca ckb csb cs cy da de el en_AU en_CA \
-	en_GB en_US eo es et eu fa fi fo fr gl gv he hi hr hu hy id is it ja jv \
-	kk kn ko lt lv mk ml mr ms nb nds nl nn oc pa pl pt_BR pt ro ru si sk sl \
+	en_GB eo es et eu fa fi fo fr gl gv he hi hr hu hy id is it ja jv kk \
+	kn ko lt lv mk ml mr ms nb nds nl nn oc pa pl pt_BR pt ro ru si sk sl \
 	sq sr sv ta te th tr uk ur vi zh_CN zh_HK zh_TW"
-
-PLOCALE_BACKUP="en_US"
 
 PYTHON_COMPAT=( python{2_6,2_7} )
 
