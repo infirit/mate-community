@@ -17,7 +17,7 @@ PYTHON_COMPAT=( python{2_6,2_7} )
 inherit eutils mate-utils python-single-r1 l10n
 
 DESCRIPTION="MintMenu supports filtering, favorites, easy-uninstallation, autosession, and many other features."
-MINT_TRANS_VERSION="mint-translations_2013.11.26.tar.gz"
+MINT_TRANSLATIONS="mint-translations_2013.11.26.tar.gz"
 LANG_URL="http://packages.linuxmint.com/pool/main/m/mint-translations/${MINT_TRANSLATIONS}"
 SRC_URI="http://packages.linuxmint.com/pool/main/m/mintmenu/${PN}_${PV}.tar.gz ${LANG_URL}"
 HOMEPAGE="http://linuxmint.com"
