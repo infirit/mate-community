@@ -12,7 +12,7 @@ PLOCALES=" \
 
 PYTHON_COMPAT=( python{2_6,2_7} )
 
-inherit eutils mate-utils python-single-r1 l10n
+inherit eutils gnome2-utils python-single-r1 l10n
 
 DESCRIPTION="MintMenu supports filtering, favorites, easy-uninstallation, autosession, and many other features."
 MINT_TRANSLATIONS="mint-translations_2013.11.26.tar.gz"
@@ -89,15 +89,15 @@ src_install() {
 }
 
 pkg_preinst() {
-	mate_schemas_savelist
+	gnome2_schemas_savelist
 }
 
 pkg_postinst() {
-	mate_schemas_update
+	gnome2_schemas_update
 
 
 }
 
 pkg_postrm() {
-	mate_schemas_update
+	gnome2_schemas_update
 }
