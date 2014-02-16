@@ -34,7 +34,9 @@ RDEPEND="${DEPEND}
 	net-libs/webkit-gtk:3[introspection]
 	gnome-extra/yelp
 	media-gfx/imagemagick
-	dev-python/pyexiv2
+	media-libs/gexiv2[${PYTHON_USEDEP}]
 	dev-python/lxml[${PYTHON_USEDEP}]"
 
 S="${WORKDIR}/${PN}"
+
+PATCHES="${FILESDIR}/${PN}-0.4.17-gexiv2.patch"
