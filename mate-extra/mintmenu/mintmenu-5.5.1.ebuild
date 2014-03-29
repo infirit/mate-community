@@ -28,7 +28,8 @@ RDEPEND="${PYTHON_DEPS}
 	dev-python/configobj[${PYTHON_USEDEP}]
 	dev-python/pygobject:3[${PYTHON_USEDEP}]
 	dev-python/pyxdg[${PYTHON_USEDEP}]
-	x11-misc/mate-menu-editor[${PYTHON_USEDEP}]
+	|| ( x11-misc/mate-menu-editor[${PYTHON_USEDEP}]
+		x11-misc/mozo[${PYTHON_USEDEP}] )
 	mate-base/mate-panel[introspection]
 	mate-base/mate-menus[python,${PYTHON_USEDEP}]"
 
