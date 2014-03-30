@@ -22,7 +22,8 @@ COMMON_DEPEND=">=dev-libs/glib-2.30
 	alsa? ( media-libs/alsa-lib )
 	dbus? ( >=dev-libs/dbus-glib-0.100 )
 	gda? ( gnome-extra/libgda:5 )
-	mate? ( mate-base/mate-file-manager )
+	mate? ( || ( mate-base/mate-file-manager
+			mate-base/caja ) )
 	ipod? ( >=media-libs/libgpod-0.7 )
 	libnotify? ( >=x11-libs/libnotify-0.7 )
 	musicbrainz? (
