@@ -22,7 +22,8 @@ CDEPEND="
 	>=dev-libs/libunique-1.0:1
 	>=x11-libs/gtk+-2.20:2
 	>=x11-libs/libnotify-0.6.1
-	caja? ( >=mate-base/mate-file-manager-1.6.0 )"
+	caja? ( || ( >=mate-base/mate-file-manager-1.6.0
+			mate-base/caja ) )"
 
 RDEPEND="${CDEPEND}
 	=sys-fs/udisks-1.0*:0[remote-access?]
